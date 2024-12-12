@@ -3,17 +3,21 @@
   height: 8vh;
 }
 
-.navbar-brand, .navbar-nav{
+.navbar-brand{
   height: 8vh;
   padding: 8px 15px;
 }
-
+.navbar-nav{
+  /*height: 8vh;*/
+  padding: 8px 15px;
+  background-color: white;
+}
 .navbar-brand{
   margin-left: 5%;
 }
 
 .navbar-nav{
-  margin-left: 20%;
+  margin-left: auto;
 }
 
 .navbar-toggle{
@@ -35,15 +39,30 @@
 }
 
 .nav li a{
-  color: #999999;
+  color: #7c7c7c;
   font-size: 15px;
   padding-top: 18px;
 }
 
 .nav-buttonStyle{
-  margin-right: 8vh;
+  margin-left: 8vh;
   margin-top: 0;
 }
+
+.arXiv a {
+  display: inline-block;
+  padding: 7px;
+  margin: 0 10px;
+  position: relative;
+  text-decoration: none; 
+}
+
+.arXiv a:hover {
+    outline: 2px solid #007bff; 
+    outline-offset: -2px;
+    border-radius: 5px;
+}
+
 
 iframe {
   display: block;
@@ -97,7 +116,7 @@ hr{
 
 
 .carousel-inner img {
-    width: 100%; /* Set width to 100% */
+    width: 100%; 
     margin: auto;
     min-height:200px;
 }
@@ -120,7 +139,7 @@ hr{
 }
 
 .explaination{
-  padding: 0 15vw;
+  padding: 0 10vw;
   line-height: 1.8;
   color: #6D6D6D;
 }
@@ -146,16 +165,16 @@ hr{
     display: none; 
   }
   h1{
-    font-size: 150%;
-  }
-  h2{
     font-size: 140%;
   }
-  h3{
+  h2{
     font-size: 130%;
   }
-  h4{
+  h3{
     font-size: 120%;
+  }
+  h4{
+    font-size: 110%;
   }
   h5{
     font-size: 100%;
@@ -168,16 +187,13 @@ hr{
   .navbar-brand{
     width: 20vw;
     height: auto;
-    padding: 8px 25px;
+    padding: 8px 20px;
   }
 
   .navbar-nav{
     height: auto;
     background-color: white;
-    padding: 0;
     margin: 0;
-    float: right;
-    margin-left: auto;
   }
 
   .nav li{
@@ -193,6 +209,25 @@ hr{
 
 
 @media (max-width: 890px) {
+  h1{
+    font-size: 140%;
+  }
+  h2{
+    font-size: 130%;
+  }
+  h3{
+    font-size: 120%;
+  }
+  h4{
+    font-size: 110%;
+  }
+  h5{
+    font-size: 100%;
+  }
+  p{
+    padding-left: 2%;
+    padding-right: 2%;
+  }
   .nav li{
     color: #6D6D6D;
     background-color: white;
@@ -203,14 +238,15 @@ hr{
   }
 }
 
-@media (max-width: 1100.98px) {
+@media (min-width: 991.99px) {
   .navbar-nav{
     height: auto;
     background-color: white;
-    padding: 0;
-    margin: 0;
+
+  }
+  .navAlign{
+    display: block;
     float: right;
-    margin-left: auto;
   }
 
   .wallImg{
