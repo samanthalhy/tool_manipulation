@@ -62,7 +62,10 @@
     outline-offset: -2px;
     border-radius: 5px;
 }
-
+/*.arXiv a img{
+  display: inline;
+}
+*/
 
 iframe {
   display: block;
